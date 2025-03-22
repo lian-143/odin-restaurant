@@ -1,0 +1,179 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #8e2a0e;
+  color: #faf7ea;
+  padding: 2em;
+  font-family: "Poppins", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+nav {
+  margin-left: 1.2em;
+}
+
+.navBtn {
+  background-color: #faf7ea;
+  color: #8e2a0e;
+  border: none;
+  font-weight: 500;
+  padding: 0.4em 0.75em;
+  margin-left: 1em;
+  border-radius: 0.1em;
+}
+
+.navBtn:hover {
+  background-color: #da9655;
+  color: #faf7ea;
+}
+
+/* HOMEPAGE */
+#content {
+  padding: 2em;
+}
+
+.container {
+  display: flex;
+  width: 70em;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  margin-top: 4em;
+  margin-right: 3em;
+  width: 80em;
+}
+
+.header > h1 {
+  font-size: 3.5em;
+}
+
+.header > p {
+  margin-top: 2em;
+  font-size: 1.2rem;
+}
+
+/* about page */
+.restaurant {
+  margin-top: 4em;
+  width: 60em;
+}
+
+.restaurant > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Menu page */
+#content > .header-menu {
+  text-align: center;
+  font-size: 3em;
+}
+
+.content-container {
+  margin-top: 2em;
+}
+
+.image-container {
+  display: flex;
+  width: 70em;
+  gap: 2em;
+}
+
+.image-container > .images {
+  height: 25em;
+  width: 50em;
+}
+
+.images > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-container {
+  height: 10em;
+  display: flex;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.menu-description-container {
+  width: 22em;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.menu-description {
+  margin-top: 1em;
+  text-align: center;
+}
